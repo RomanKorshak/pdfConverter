@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Download";
+}
+
+@section links {
+    <link rel="stylesheet" href="~/css/download.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+}
+
+<div id="preloader-field">
+    <div class="contents">
+        <div class="square-wrapper">
+            <div class="square-box">
+                <div class="square-fill"></div>
+            </div>
+            <div class="square-box">
+                <div class="square-fill"></div>
+            </div>
+            <div class="square-box">
+                <div class="square-fill"></div>
+            </div>
+            <div class="square-box">
+                <div class="square-fill"></div>
+            </div>
+            <div class="square-box">
+                <div class="square-fill"></div>
+            </div>
+            <div class="square-box">
+                <div class="square-fill"></div>
+            </div>
+        </div>
+        <img src="~/Images/BigLogo.png" />
+        <span class="light-40">Идёт преобразование изображений в PDF</span>
+    </div>
+</div>
+
+<div class="contents">
+
+    <span class="light-40">Ваши изображения были преобразованы в PDF</span>
+
+    <div class="active-box">
+        <div class="back-icon"></div>
+        <div class="button border-shadow download-button">
+            <div class="button-animation">
+                <span class="demi-35">Скачать PDF</span>
+            </div>
+        </div>
+        <div class="delete-icon"></div>
+    </div>
+</div>
+
+
+@section scripts {
+    <script src="~/js/download.js"></script>
+}

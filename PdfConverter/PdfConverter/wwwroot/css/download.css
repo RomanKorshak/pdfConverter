@@ -1,0 +1,123 @@
+﻿#preloader-field {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #151D20;
+    z-index: 1001;
+}
+
+@keyframes logo-animation {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#preloader-field span {
+    color: #fff;
+    margin-top: 50px;
+}
+
+#preloader-field img {
+    margin-top: -40px;
+    animation-name: logo-animation;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.square-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+}
+
+.square-box {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    background: none transparent;
+    overflow: hidden;
+}
+
+.square-fill {
+    background: none #FCE130;
+    width: 100%;
+    height: 100%;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+}
+
+.contents::after {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    z-index: -1;
+    content: url('../Images/back-icon-hover.png') url('../Images/delete_icon_hover.svg');
+}
+
+.active-box {
+    width: 541px;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../Images/back-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.back-icon:hover { background: url('../Images/back-icon-hover.png') no-repeat; }
+
+.delete-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../Images/delete-icon.png') no-repeat;
+}
+
+.delete-icon:hover { background: url('../Images/delete_icon_hover.svg') no-repeat; }
+
+.download-button {
+    width: 400px;
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.button-animation {
+    padding-top: 20px;
+}
+
+.download-button span::before {
+    content: url('../Images/download-icon.png');
+    position: relative;
+    top: 8px;
+    margin-right: 10px;
+}
+

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Images/add_hover.png"/>
+
+    <link rel="prefetch" href="~/Fonts/FuturaPT-Demi.woff" as="font" type="font/woff" />
+    <link rel="prefetch" href="~/Fonts/FuturaPT-Light.woff" as="font" type="font/woff" />
+    <link rel="prefetch" href="~/Fonts/FuturaPT-Medium.woff" as="font" type="font/woff" />
+
+    <link rel="stylesheet" href="~/css/fonts.css" />
+    <link rel="stylesheet" href="~/css/master.css" />
+    <link rel="stylesheet" href="~/css/headerStyle.css" />
+
+    @RenderSection("links")
+</head>
+<body>
+    <div class="header">
+        <img src="~/Images/logo.png" />
+    </div>
+
+    <div class="child-contents">
+        @RenderBody()
+    </div>
+
+
+    <div class="footer">
+
+    </div>
+
+
+    @RenderSection("scripts")
+</body>
+</html>

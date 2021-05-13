@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "ImgToPDF";
+}
+
+@section links {
+    <link rel="stylesheet" href="~/css/index.css"/>
+}
+
+<div id="submit-data">
+    <form class="upload-container" method="post">
+        <div>
+            <input id="file-input" type="file" multiple/>
+            <label for="file-input" class="custom-label"></label>
+        </div>
+    </form>
+    
+    <div id="image-list">
+
+    </div>
+
+    <button id="send-button">Send request</button>
+
+    <button id="convert-button">Convert</button>
+</div>
+
+@section scripts {
+    <script src="~/js/index.js"></script>
+}
+
+

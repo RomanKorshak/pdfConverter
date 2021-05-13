@@ -1,0 +1,38 @@
+﻿
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    outline: blue dashed 2px;
+}
+
+.upload-container.dragover {
+    background-color: yellow;
+    outline-offset: -17px;
+}
+
+#file-input {
+    height: 0.1px;
+    width: 0.1px;
+}
+
+.custom-label {
+    font-weight: bold;
+  
+}
+
+#file-input:focus + .custom-label {
+    outline: green dashed 1px;
+
+} 
+
+.custom-image {
+    width: 100px;
+    height: 100px;
+}
+
+
+
